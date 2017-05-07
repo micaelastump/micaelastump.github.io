@@ -1,0 +1,317 @@
+f
+
+/*------------------     GLOBARL OVERRIDES       -----------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
+
+
+
+/*------------------     UNIVERSAL       -----------------------------*/
+
+.global {
+  color: #978F84;
+  font-family: 'Poiret One';
+  font-size: 14pt;
+  background-color: #4A362F;
+
+}
+
+.content {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 3rem;
+  padding: 30px 0px 0px 0px;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 10px 0px;
+}
+
+
+p, td, th {
+  line-height: 150%;
+}
+
+li {
+  list-style: none;
+}
+
+
+.banner {
+  padding: 5%;
+  margin: 5% 0px;
+}
+
+/*------------------     NAV BAR       -----------------------------*/
+
+.navbar {
+  z-index: 10;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #978F84;
+  z-index: 10;
+
+}
+
+.navbar li {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a {
+  display: block;
+  padding: 0px;
+
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+
+.navbar li a {
+  float: left;
+  display: block;
+  color: #D9D9DB;
+  text-align: center;
+  margin: 16px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/hamburger.png);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: fixed;
+  text-indent: -9999px;
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+/*------------------     CONTENT & BANNERS         -----------------------------*/
+.content{
+ overflow: hidden;
+ margin:0 auto;
+ height: 100%;
+}
+
+.banner {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.title_banner {
+  background-color: #121210;
+}
+
+.about_banner {
+  background-color: #121210;
+}
+
+.team_banner {
+  background-color: #121210;
+}
+
+.beers_banner {
+  background-color: #121210;
+}
+
+.contact-us_banner {
+  background-color: #121210;
+}
+
+.micaela_banner{
+  background-color: #121210;
+}
+
+
+/*------------------     TITLE BAR       -----------------------------*/
+
+
+.title {
+  margin-top: 30px;
+}
+
+
+
+/*------------------        About      -----------------------------*/
+
+.about {
+  width: 100%;
+}
+
+
+/*------------------        TEAM      -----------------------------*/
+
+.team_pics {
+  width: 60%;
+  margin: 0 auto;
+}
+.team_wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.team_wrap p {
+  margin: 0 auto;
+  vertical-align: middle;
+  line-height: 200px;
+}
+.team_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.72);
+  color: #D9D9DB;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .05s, visibility .2s;
+}
+
+.team_wrap:hover .team_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*------------------     Beer Table    -----------------------------*/
+table {
+  display: block;
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  background-color: #4A362F;
+  color: #978F84;
+}
+
+table, th, td {
+  border: 1px solid #978F84;
+  text-align: center;
+}
+
+.beer-table {
+  table-layout: auto;
+  text-align: left;
+}
+
+
+th {
+  font-weight: bold;
+  background-color: #121210;
+}
+
+td, th {
+  width: 25%;
+}
+
+
+thead {
+  position: relative;
+}
+
+/*------------------     CONTACT US    -----------------------------*/
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0px auto;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #262626;
+}
+
+.contact-us {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.contact-us ul li {
+  padding: 10px 0px  2px 0px;
+}
+
+form p {
+  margin: 10px 0px;
+}
+
+/*------------------     RESPONSIVE   -----------------------------*/
+
+@media screen and (max-width: 500px) {
+  
+  .navbar li {
+    float: none;
+  }
+
+  .navbar li a {
+    display: block;
+    float: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+
+  p {
+   margin: 0 0 10px;
+  }
+
+    .hamburger {
+   position: fixed;
+    display: block;
+    right: 10px;
+    top: 10px;
+  }
+
+  h1 {
+   padding: 0px;
+  }
+}
+
+
+
+/*------------------     next   -----------------------------*/
+
+
