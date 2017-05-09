@@ -1,4 +1,4 @@
-f
+
 
 /*------------------     GLOBARL OVERRIDES       -----------------------------*/
 
@@ -13,19 +13,32 @@ f
 }
 
 
+body, html {
+    height: 100%;
+}
 
 
 
 /*------------------     UNIVERSAL       -----------------------------*/
 
 .global {
-  color: #D3BF94;
-  font-family: 'Poiret One';
+  color: red;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 14pt;
-  background-color: #9B805A;
+  font-weight: 400;
+ 
 
 }
 
+.site {
+  background-image: url(../images/wood1.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 .content {
   text-align: center;
 }
@@ -35,6 +48,7 @@ h1 {
   font-size: 3rem;
   padding: 30px 0px 0px 0px;
   line-height: 100%;
+  font-weight: 700;
 }
 
 h2 {
@@ -54,7 +68,7 @@ li {
 
 .banner {
   padding: 5%;
-  margin: 5% 0px;
+  margin: 10% 0px;
 }
 
 /*------------------     NAV BAR       -----------------------------*/
@@ -68,7 +82,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #9B805A;
+  background-color: red;
   z-index: 10;
 
 }
@@ -86,19 +100,20 @@ header {
 }
 
 .navbar a:hover {
-  color: #2A1D15;
+  color: black;
 }
 
 
 .navbar li a {
   float: left;
   display: block;
-  color: #D3BF94;
+  color: white;
   text-align: center;
   margin: 1rem;
   text-decoration: none;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
 }
 
 .hamburger {
@@ -126,32 +141,30 @@ header {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
 }
 
 .title_banner {
-  background-color: #1E1713;
+  background-color: rgba(43, 44, 41, .72)
 }
 
 .about_banner {
-  background-color: #1E1713;
+  background-color: rgba(43, 44, 41, .72)
 }
 
 .team_banner {
-  background-color: #1E1713;
-  height: 600px;
+ background-color: rgba(43, 44, 41, .72)
 }
 
 .beers_banner {
-  background-color: #1E1713;
+ background-color: rgba(43, 44, 41, .72)
 }
 
 .contact-us_banner {
-  background-color: #1E1713;
+  background-color: rgba(43, 44, 41, .72)
 }
 
 .micaela_banner{
-  background-color: #1E1713;
+background-color: rgba(43, 44, 41, .72)
 }
 
 
@@ -171,19 +184,58 @@ header {
 }
 
 
+/*------------------     Beer Table    -----------------------------*/
+table {
+  display: block;
+  max-height: 200px;
+  max-width: 800px;
+  overflow-y: scroll;
+  overflow-x: auto;
+  background-color: black;
+  color: #D3BF94;
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.beer-table {
+  table-layout: auto;
+  text-align: left;
+}
+
+
+th {
+  font-weight: bold;
+  background-color: red;
+  color: white
+}
+
+td, th {
+  width: 25%;
+}
+
+
+thead {
+  position: relative;
+}
+
+
 /*------------------        TEAM      -----------------------------*/
 
 .team_pics {
-  width: 100%;
+  max-width: 850px;
   margin: 0 auto;
 }
 .team_wrap {
   display: inline-block;
   position: relative;
+  max-height: 200px;
 }
 
 .team_wrap p {
-  margin: 0 auto;
   vertical-align: middle;
   line-height: 200px;
 }
@@ -197,6 +249,7 @@ header {
   color: #D9D9DB;
   visibility: hidden;
   opacity: 0;
+  max-height: 200px;
 
   /* transition effect. not necessary */
   transition: opacity .05s, visibility .2s;
@@ -207,55 +260,20 @@ header {
   opacity: 1;
 }
 
-/*------------------     Beer Table    -----------------------------*/
-table {
-  display: block;
-  max-height: 200px;
-  overflow-y: scroll;
-  overflow-x: auto;
-  background-color: #9B805A;
-  color: #D3BF94;
-}
-
-table, th, td {
-  border: 1px solid #D3BF94;
-  text-align: center;
-}
-
-.beer-table {
-  table-layout: auto;
-  text-align: left;
-}
-
-
-th {
-  font-weight: bold;
-  background-color: #2A1D15;
-}
-
-td, th {
-  width: 25%;
-}
-
-
-thead {
-  position: relative;
-}
-
 /*------------------     CONTACT US    -----------------------------*/
 
-input[type=text], select, textarea {
+input[type=text], select {
     width: 50%;
-    padding: 12px;
+    padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin: 0px auto;
+    margin: 0 auto;
     resize: vertical;
 }
 
 input[type=submit] {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -265,6 +283,10 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #262626;
 }
+
+input[type=radio] {
+  display: inline-block;
+ }
 
 .contact-us {
     border-radius: 5px;
@@ -279,10 +301,29 @@ form p {
   margin: 10px 0px;
 }
 
+button {
+  margin: 5px 0 0 0;
+  background-color: red;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Inknut Antiqua', serif;
+  line-height: 150%;
+}
+
 /*------------------     RESPONSIVE   -----------------------------*/
 
 @media screen and (max-width: 500px) {
-  
+  header {
+    background-color: #9B805A;
+  }
+
+  .navbar {
+    display: none;
+    float: none;
+  }
+
   .navbar li {
     float: none;
   }
@@ -296,7 +337,7 @@ form p {
 
 
   p {
-   margin: 0 0 10px;
+   margin: 0 0 0px;
   }
 
   .hamburger {
@@ -313,6 +354,19 @@ form p {
   .banner {
     height: 100%;
   }
+
+  .team_img, .team_description {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team_wrap p {
+    display: flex;
+    line-height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 
