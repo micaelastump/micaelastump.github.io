@@ -31,7 +31,7 @@ body, html {
 }
 
 .site {
-  background-image: url(../images/family.jpg);
+  background-image: url(../images/greywood.jpg);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -52,7 +52,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 10px 0px;
   color: rgb(168, 5, 5);\
   font-weight: 700;
@@ -173,7 +173,9 @@ background-color: rgba(43, 44, 41, .72)
 
 /*------------------     TITLE BAR       -----------------------------*/
 
-
+.title img {
+  max-width: 30%;
+}
 
 /*------------------        About      -----------------------------*/
 
@@ -204,6 +206,7 @@ table, th, td {
 .beer-table {
   table-layout: auto;
   text-align: left;
+  table-layout: fixed;
 }
 
 
